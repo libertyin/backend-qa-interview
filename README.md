@@ -69,7 +69,7 @@ The API will return the following fields: `city`, `condition`, `icon`, `descript
 
 You are also provided 2 helper API-s to be able to set the states for the GET weather API
 
-####PUT .../weather/temp
+#### PUT .../weather/temp
 
 You can set the Fahrenheit temperature with this API, by sending an Integer
 * You can fetch the endpoint through  `TODO` with the following data structure:
@@ -79,7 +79,7 @@ You can set the Fahrenheit temperature with this API, by sending an Integer
 }
 ```
 
-####PUT .../weather/condition
+#### PUT .../weather/condition
 
 You can set the Condition ID with this API, by sending an Integer
 * You can fetch the endpoint through  `TODO` with the following data structure:
