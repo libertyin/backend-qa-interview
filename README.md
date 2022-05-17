@@ -94,7 +94,7 @@ You can set the Condition ID with this API, by sending an Integer
 You need to implement a test automation for the weather API (see above) using Cucumber and Selenium
 * Define Cucumber scenarios
 * Use the following farmeworks/technologies within the automation project:
-    * Selenium
+    * Maven and POM
     * Executed Cucumber and BDD tests.
     * Reporting framework of your choice.
 * Include the final automated test result/report in the readme.
