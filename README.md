@@ -1,14 +1,15 @@
 # backend-qa-interview
 
----
+
 ## Weather 'application' overview
 
 You are assigned to a team which is developing weather related application's MVP backend. 
-Your task is the test the API that the application will use.
+Your task is to create automated tests for API that the application will use.
 
 The app will use one API, that tells the weather for a fixed city for the MVP. (Condition, description, temperatures ...etc.).
 
 The API will return the following fields: `city`, `condition`, `icon`, `description` `conditionId` `tempInFahrenheit` and `tempInCelsius`
+
 
 ## Weather backend's acceptance criteria-s
 
@@ -46,10 +47,12 @@ The API will return the following fields: `city`, `condition`, `icon`, `descript
 | celsius < 25    | warm          |
 | celsius >= 25   | hot           |
 
----
+
 ### The API:
 **GET .../weather**
-* You can fetch the endpoint through  `TODO` with the following data structure:
+* You can fetch the endpoint through  `curl -X 'GET' \
+  'https://backend-interview.unstable.gcp.viesure.io/weather' \
+  -H 'accept: application/json'` with the following data structure:
 
 ```json
 {
@@ -72,34 +75,41 @@ You are also provided 2 helper API-s to be able to set the states for the GET we
 #### PUT .../weather/temp
 
 You can set the Fahrenheit temperature with this API, by sending an Integer
-* You can fetch the endpoint through  `TODO` with the following data structure:
-```json
-{
-  "tempInFahrenheit" : 40
-}
+* You can call the endpoint through  `https://backend-interview.unstable.gcp.viesure.io/weather/temp`
+```cURL
+curl -X 'PUT' \
+  'https://backend-interview.unstable.gcp.viesure.io/weather/temp' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "tempInFahrenheit": 17
+}'
 ```
-
 #### PUT .../weather/condition
 
 You can set the Condition ID with this API, by sending an Integer
-* You can fetch the endpoint through  `TODO` with the following data structure:
-```json
-{
-  "condition" : 1
-}
+* You can call the endpoint through  `https://backend-interview.unstable.gcp.viesure.io/weather/condition`
+```cURL
+curl -X 'PUT' \
+  'https://backend-interview.unstable.gcp.viesure.io/weather/condition' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "condition": 1
+}'
 ```
 
----
+
 ## Your task
 You need to implement a test automation for the weather API (see above) using Cucumber and Selenium
 * Define Cucumber scenarios
 * Use the following farmeworks/technologies within the automation project:
     * Maven and POM
-    * Executed Cucumber and BDD tests.
+    * BDD and Executed cucumber tests.
     * Reporting framework of your choice.
 * Include the final automated test result/report in the readme.
 * Open a pull request containing automation source code and an informative readme.
 
----
+
 ## Next Step
 Our QA and Development team will review your task carefully and contact you as soon as possible.
