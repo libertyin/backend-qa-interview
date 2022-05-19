@@ -113,7 +113,7 @@ You need to implement a test automation for the weather API (see above) using Cu
 * Include the final automated test result/report in the readme.
 * Open a pull request containing automation source code and an informative readme.
 
-## Bonus
+## Challenge
 
 To also make use of selenium, test a few fields from `https://openweathermap.org/`
 
