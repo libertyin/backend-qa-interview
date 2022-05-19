@@ -50,10 +50,12 @@ The API will return the following fields: `city`, `condition`, `icon`, `descript
 
 ### The API:
 **GET .../weather**
-* You can fetch the endpoint through  `curl -X 'GET' \
+* You can fetch the endpoint through  `https://backend-interview.unstable.gcp.viesure.io/weather` with the following data structure:
+```curl
+curl -X 'GET' \
   'https://backend-interview.unstable.gcp.viesure.io/weather' \
-  -H 'accept: application/json'` with the following data structure:
-
+  -H 'accept: application/json'
+```
 ```json
 {
   "city"        : "Vienna",
