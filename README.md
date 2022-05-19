@@ -26,7 +26,7 @@ The API will return the following fields: `city`, `condition`, `icon`, `descript
 
 * The **condition field** would tell the weather condition as a string based on condition id
   * Can have the following values `clear`, `windy`, `mist`, `drizzle` and `dust`
-* The **icon field** gives a PNG type image (string) that correlates (same as) the current condition
+* The **icon field** gives a `png` type image (string) that correlates (same as) the current condition
 * The **weather object** contains the temperature in both Fahrenheit and Celsius
   * The **tempInFahrenheit field** contains the current temperature in Fahrenheits
     * Should have 0 digits
@@ -104,11 +104,30 @@ curl -X 'PUT' \
 You need to implement a test automation for the weather API (see above) using Cucumber and Selenium
 * Define Cucumber scenarios
 * Use the following farmeworks/technologies within the automation project:
+    * Selenium
     * Maven and POM
     * BDD and Executed cucumber tests.
     * Reporting framework of your choice.
 * Include the final automated test result/report in the readme.
 * Open a pull request containing automation source code and an informative readme.
+
+## Bonus
+
+To also make use of selenium, test a few fields from `https://openweathermap.org/`
+
+#### Task1
+Verify the main page's title field text
+
+![Title](./resources/openweather_title.png)
+
+#### Task2
+* Search for `Sydney`, and select `Sydney, AU` from the list
+* Verify the selected city' title
+* Verify the date
+* Verify the time
+
+
+![Title](./resources/openweather_search.png)
 
 
 ## Next Step
