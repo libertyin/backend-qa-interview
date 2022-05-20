@@ -42,7 +42,7 @@ The API will return the following fields: `city`, `condition`, `icon`, `descript
 | Rule            | Description   |
 | -------------   | ------------- |
 | celsius <= 0    | freezing      |
-| celsius < 11    | cold          |
+| celsius < 10    | cold          |
 | celsius < 20    | mild          |
 | celsius < 25    | warm          |
 | celsius >= 25   | hot           |
