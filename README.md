@@ -106,6 +106,7 @@ curl -X 'PUT' \
 You need to implement a test automation for the weather API (see above) using Cucumber and Selenium
 * Define Cucumber scenarios
 * Use the following farmeworks/technologies within the automation project:
+    * Java
     * Selenium
     * Maven and POM
     * BDD and Executed cucumber tests.
