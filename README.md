@@ -50,10 +50,10 @@ The API will return the following fields: `city`, `condition`, `icon`, `descript
 
 ### The API:
 **GET .../weather**
-* You can fetch the endpoint through  `https://backend-interview.unstable.gcp.viesure.io/weather` with the following data structure:
+* You can fetch the endpoint through  `https://backend-interview.tools.gcp.viesure.io/weather` with the following data structure:
 ```curl
 curl -X 'GET' \
-  'https://backend-interview.unstable.gcp.viesure.io/weather' \
+  'https://backend-interview.tools.gcp.viesure.io/weather' \
   -H 'accept: application/json'
 ```
 ```json
@@ -77,10 +77,10 @@ You are also provided 2 helper API-s to be able to set the states for the GET we
 #### PUT .../weather/temp
 
 You can set the Fahrenheit temperature with this API, by sending an Integer
-* You can call the endpoint through  `https://backend-interview.unstable.gcp.viesure.io/weather/temp`
+* You can call the endpoint through  `https://backend-interview.tools.gcp.viesure.io/weather/temp`
 ```cURL
 curl -X 'PUT' \
-  'https://backend-interview.unstable.gcp.viesure.io/weather/temp' \
+  'https://backend-interview.tools.gcp.viesure.io/weather/temp' \
   -H 'accept: */*' \
   -H 'Content-Type: application/json' \
   -d '{
@@ -90,10 +90,10 @@ curl -X 'PUT' \
 #### PUT .../weather/condition
 
 You can set the Condition ID with this API, by sending an Integer
-* You can call the endpoint through  `https://backend-interview.unstable.gcp.viesure.io/weather/condition`
+* You can call the endpoint through  `https://backend-interview.tools.gcp.viesure.io/weather/condition`
 ```cURL
 curl -X 'PUT' \
-  'https://backend-interview.unstable.gcp.viesure.io/weather/condition' \
+  'https://backend-interview.tools.gcp.viesure.io/weather/condition' \
   -H 'accept: */*' \
   -H 'Content-Type: application/json' \
   -d '{
