@@ -135,3 +135,51 @@ Verify the main page's title field text
 
 ## Next Step
 Our QA and Development team will review your task carefully and contact you as soon as possible.
+
+## ViesureExam-API task 1
+### Run tests ###
+
+mvn test
+
+### Bugs ###
+
+1. Incorrect tempInCelsius received when set tempInFahrenheit = 30 in /weather/temp
+   actual: tempInCelsius = -2
+   expected: tempInCelsius = -1
+2. Incorrect description received when set tempInFahrenheit = 50 in /weather/temp
+   actual: description = The weather is cold
+   expected: description = The weather is mild
+3. Incorrect description received when set tempInFahrenheit = 68 in /weather/temp
+   actual: The weather is
+   expected: The weather is warm
+4. Incorrect description received when set tempInFahrenheit = 75 in /weather/temp
+   actual: The weather is
+   expected: The weather is warm
+5. Incorrect icon received when set condition = 4 in /weather/condition
+   actual: drizzle.jpeg
+   expected: drizzle.png
+   
+##ViesureExam-Challenge task 2
+
+### Add dependency and install browser
+npm i -D @playwright/test
+
+### Start tests
+npx playwright test
+
+### Start tests in headed mode
+npx playwright test --headed
+
+### Open last HTML report
+npx playwright show-report
+
+### Tips and Tricks
+To run only 1 test from file - add "test.only" and start tests
+
+To run tests in only 1 browser - "npx playwright test --project=webkit"
+
+To debug test - add "await page.pause()" in test and run tests in headed moode
+
+More information can be found here: https://playwright.dev/
+
+
